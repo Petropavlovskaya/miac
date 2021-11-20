@@ -15,7 +15,7 @@ public class CapacityEntity {
     private int id;
 
     @Column(name = "capacity")
-    private int capacity;
+    private float capacity;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "fk_organization")

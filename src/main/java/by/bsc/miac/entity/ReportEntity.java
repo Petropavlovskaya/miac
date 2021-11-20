@@ -16,28 +16,28 @@ public class ReportEntity {
     private int id;
 
     @Column(name = "produce_all")
-    private int produceAll;
+    private float produceAll;
 
     @Column(name = "produce_month")
-    private int produceMonth;
+    private float produceMonth;
 
     @Column(name = "onvr_all")
-    private int onvrAll;
+    private float onvrAll;
 
     @Column(name = "onvr_month")
-    private int onvrMonth;
+    private float onvrMonth;
 
     @Column(name = "export_unit_all")
-    private int exportUnitAll;
+    private float exportUnitAll;
 
     @Column(name = "export_unit_month")
-    private int exportUnitMonth;
+    private float exportUnitMonth;
 
     @Column(name = "export_money_all")
-    private int exportMoneyAll;
+    private float exportMoneyAll;
 
     @Column(name = "export_money_month")
-    private int exportMoneyMonth;
+    private float exportMoneyMonth;
 
     @Column(name = "date")
     private Date date;

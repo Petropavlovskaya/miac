@@ -11,8 +11,21 @@ public class MainController {
 
     @GetMapping
     public String showMainPage(Model model){
-                                                                            System.out.println("We are in GetMapping of Main");
+        return "index";
+    }
+
+
+}
+/*
+
+@Controller
+@RequestMapping("/main")
+public class MainController {
+
+    @GetMapping
+    public String showMainPage(Model model){
         return "index";
     }
 
 }
+*/
