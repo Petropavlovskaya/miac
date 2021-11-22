@@ -1,6 +1,6 @@
-package by.bsc.miac.dao.hibernate;
+package by.bsc.miac.daoToDelete.hibernate;
 
-import by.bsc.miac.dao.IReportRepository;
+import by.bsc.miac.daoToDelete.IReportRepository;
 import by.bsc.miac.entity.MaterialEntity;
 import by.bsc.miac.entity.OrganizationEntity;
 import by.bsc.miac.entity.ReportEntity;

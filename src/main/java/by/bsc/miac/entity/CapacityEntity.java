@@ -12,7 +12,7 @@ public class CapacityEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
-    private int id;
+    private long id;
 
     @Column(name = "capacity")
     private float capacity;

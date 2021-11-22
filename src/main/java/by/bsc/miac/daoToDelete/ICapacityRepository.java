@@ -1,7 +1,6 @@
-package by.bsc.miac.dao;
+package by.bsc.miac.daoToDelete;
 
 import by.bsc.miac.entity.CapacityEntity;
-import by.bsc.miac.entity.OrganizationEntity;
 
 import java.util.List;
 

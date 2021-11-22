@@ -24,11 +24,12 @@ import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 import javax.sql.DataSource;
 import java.util.Locale;
 import java.util.Objects;
+import java.util.Properties;
 
 @Configuration
 @ComponentScan("by.bsc.miac")
 @EnableWebMvc  // equals <mvc:annotation-driven />  Turn on SpringMVC
-@PropertySource(value = "classpath:app.properties")
+@PropertySource(value = "classpath:db.properties")
 public class SpringConfig implements WebMvcConfigurer {
 
     private final ApplicationContext applicationContext;
@@ -111,5 +112,12 @@ public class SpringConfig implements WebMvcConfigurer {
         return resolver;
 //        return new CookieLocaleResolver();
     }
-
+    @Bean
+    public Properties hibernateProperties() {
+        final Properties hibernateProperties = new Properties();
+        hibernateProperties.setProperty("hibernate.hbm2ddl.auto", "create");
+        hibernateProperties.setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQLDialect");
+        hibernateProperties.setProperty("hibernate.show_sql", "true");
+        return hibernateProperties;
+    }
 }

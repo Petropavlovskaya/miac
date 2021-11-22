@@ -16,7 +16,7 @@
         <!--        <class>com.epam.entity.PostComment</class>-->
         <!--    <class>com.epam.entity.Person</class>-->
         <properties>
-            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="javax.persistence.jdbc.driver" value="${db.driverClassName}"/>
             <property name="javax.persistence.jdbc.url"
                       value="${db.url}"/> <!-- BD Mane -->
             <property name="javax.persistence.jdbc.user" value="${db.username}"/> <!-- DB User -->

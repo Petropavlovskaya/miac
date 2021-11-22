@@ -13,7 +13,7 @@ public class ReportEntity {
     @Id
     @Column
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private long id;
 
     @Column(name = "produce_all")
     private float produceAll;

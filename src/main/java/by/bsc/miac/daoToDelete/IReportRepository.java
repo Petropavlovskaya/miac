@@ -1,13 +1,9 @@
-package by.bsc.miac.dao;
+package by.bsc.miac.daoToDelete;
 
 import by.bsc.miac.entity.MaterialEntity;
 import by.bsc.miac.entity.OrganizationEntity;
 import by.bsc.miac.entity.ReportEntity;
 
-import javax.persistence.Column;
-import javax.persistence.FetchType;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import java.util.Date;
 import java.util.List;
 

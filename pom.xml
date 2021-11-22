@@ -10,8 +10,7 @@
   <packaging>war</packaging>
 
   <name>PromBuild Maven Webapp</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <url>http://localhost:8080/miac</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -27,7 +26,7 @@
 <!--    <hibernate.validator.version>6.2.0.Final</hibernate.validator.version>-->
     <servlet.api.version>4.0.1</servlet.api.version>
     <logging.version>2.14.1</logging.version>
-<!--      <spring.boot.starter>2.5.5</spring.boot.starter>-->
+      <spring.boot.starter>2.5.5</spring.boot.starter>
   </properties>
 
   <dependencies>
@@ -133,11 +132,13 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-jpa</artifactId>
+      <version>${spring.boot.starter}</version>
     </dependency>
 
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
+      <version>${spring.boot.starter}</version>
     </dependency>
 
     <dependency>
